@@ -1,0 +1,42 @@
+.list-header {
+  padding: 20px;
+  height: 100px;
+  color: white;
+}
+
+.list-header h2 {
+  background-color: #808080; 
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.link-home {
+  position: absolute;
+  top: 65px;
+  left: 40px;
+  color: #3942b4
+}
+
+.list-items {
+  list-style: none;
+  padding: 20px 30px;
+  max-width: 550px;
+  margin: 0px auto;
+  text-align: left;
+}
+
+.add-item {
+  padding-bottom: 20px;
+}
+
+.add-item-input {
+  width: 300px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+.add-item-button {
+  margin-left: 20px;
+  padding: 4px 10px;
+  line-height: 20px;   
+}

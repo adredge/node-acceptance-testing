@@ -1,0 +1,41 @@
+.item {
+    background-color: #D3D3D3;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 31px;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-checkbox {
+    flex-grow: 1;
+    margin-right: 15px;
+    transform: scale(1.7, 1.7);
+}
+
+.display-text{
+    flex-grow: 45;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.completed-at {
+    font-style: italic;
+    font-size: .5em;
+}
+
+.remove-button {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    font-size: 15px;
+}

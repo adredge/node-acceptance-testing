@@ -1,0 +1,33 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "Basic to-do list web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha \"./server/**/*.specs.js\"",
+    "test-watch": "npm test -- -w",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "test-integration": "./node_modules/.bin/mocha ./test/database-setup.js \"./server/**/*.i-specs.js\"",
+    "ti": "./node_modules/.bin/mocha ./test/database-setup.js \"./server/**/*.i-specs.js\" || true"
+  },
+  "author": "Amy Dredge",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.17.0",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.0",
+    "mocha": "^3.5.3",
+    "supertest": "^3.0.0",
+    "testdouble": "^3.2.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.10",
+    "react-router-dom": "^4.2.2",
+    "uuid": "^3.1.0"
+  }
+}
