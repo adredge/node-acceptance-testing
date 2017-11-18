@@ -1,7 +1,6 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const toDoListModel = require('../to-do-list/schema')
 
 module.exports = function (config, env) {
   mongoose.connect(config.db, { useMongoClient: true })
