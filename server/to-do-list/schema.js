@@ -1,7 +1,6 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const uuid = require('uuid')
 
 const itemSchema = mongoose.Schema(
     {name:String, 

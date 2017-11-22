@@ -22,7 +22,7 @@
 }
 
 .display-text{
-    flex-grow: 45;
+    flex-grow: 40;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,7 +30,7 @@
 
 .completed-at {
     font-style: italic;
-    font-size: .5em;
+    font-size: .8em;
 }
 
 .remove-button {
