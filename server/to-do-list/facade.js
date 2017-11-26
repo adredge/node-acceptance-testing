@@ -20,7 +20,8 @@ module.exports = {
   },
 
   addItem(userId, addItemDetails) {
-    return toDoListRepository.addItem(userId, addItemDetails.listId, addItemDetails.newItemName)
+    return toDoListRepository.addItem(userId, addItemDetails.listId, 
+      addItemDetails.newItemName)
   },
 
   removeItem(userId, listId, itemId) {
