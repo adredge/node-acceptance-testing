@@ -382,6 +382,5 @@ describe('toDoListRepository', () => {
     it('should delete the list', () => {
       expect(list).to.be.null
     })
-
   })
 })
