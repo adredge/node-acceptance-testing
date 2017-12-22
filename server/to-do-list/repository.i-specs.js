@@ -13,7 +13,7 @@ describe('toDoListRepository', () => {
     userId = uuid.v4()
   })
 
-  context('when getting a list', () => {
+  context('when creating and getting a list', () => {
     let createdList, returnedList
 
     beforeEach(() => {
@@ -25,6 +25,13 @@ describe('toDoListRepository', () => {
 
     afterEach(() => {
       return toDoListRepository.deleteList(userId, createdList._id)
+    })
+
+    it('should create an empty list', () => {
+      expect(createdList._id.toString().length).to.be.above(10)
+      expect(createdList.userId).to.equal(userId)
+      expect(createdList.name).to.equal('Default')
+      expect(createdList.items).to.eql([])
     })
 
     it('should return the users list', () => {
