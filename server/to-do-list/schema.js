@@ -8,6 +8,9 @@ const itemSchema = mongoose.Schema(
         complete: Boolean,
         completedAt: Date
     },
+    {
+        usePushEach: true 
+    },
     { collection: 'items' }
 )
 
@@ -18,6 +21,9 @@ const listSchema = mongoose.Schema(
         name: String,
         userId: String,
         items: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Item' }],
+    },
+    {
+        usePushEach: true 
     },
     { collection: 'lists' }
 )
